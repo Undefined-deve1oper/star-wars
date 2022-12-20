@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Raw Ascii Web Shooter</title>
+	<meta charset="utf-8">
+
+	<meta name="theme-color" content="#ADD8E6">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+	<meta name="author" content="FredDD,SRW">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimal-ui,shrink-to-fit=no"/>
+
+	<link rel="stylesheet" href="./styles/main.css" type="text/css">
+	<script type="module" defer src="./js/main.js"></script>
+</head>
+
+<body class="title">
+
+	<header id="title">
+		<h1><pre>
+______                  ___           _ _   _    _      _       _____ _                 _            
+| ___ \                / _ \         (_|_) | |  | |    | |     /  ___| |               | |           
+| |_/ /__ ___      __ / /_\ \___  ___ _ _  | |  | | ___| |__   \ `--.| |__   ___   ___ | |_ ___ _ __ 
+|    // _` \ \ /\ / / |  _  / __|/ __| | | | |/\| |/ _ \ '_ \   `--. \ '_ \ / _ \ / _ \| __/ _ \ '__|
+| |\ \ (_| |\ V  V /  | | | \__ \ (__| | | \  /\  /  __/ |_) | /\__/ / | | | (_) | (_) | ||  __/ |   
+\_| \_\__,_| \_/\_/   \_| |_/___/\___|_|_|  \/  \/ \___|_.__/  \____/|_| |_|\___/ \___/ \__\___|_|   </pre>
+		</h1>
+
+		<h2>RAWS: веб-шутер, созданный для _bekovv</h2>
+
+		<h3>Дизайн с <span style="color: red;">&hearts;</span> использован ванильный(обычный) javascript, звуки и
+		    графика ascii</h3>
+
+		<h3 class="last">Посещайте каждый день, чтобы играть на другом уровне</h3>
+
+		<h4 data-score="N/A">Сегоднешние очки: </h4>
+
+		<div class="flex">
+			<button id="btnPlay">Играть</button>
+			<button id="btnHowTo">Как играть ?</button>
+		</div>
+
+	</header>
+
+	<aside id="howto">
+
+		<h1><pre>
+______                  ___           _ _   _    _      _       _____ _                 _            
+| ___ \                / _ \         (_|_) | |  | |    | |     /  ___| |               | |           
+| |_/ /__ ___      __ / /_\ \___  ___ _ _  | |  | | ___| |__   \ `--.| |__   ___   ___ | |_ ___ _ __ 
+|    // _` \ \ /\ / / |  _  / __|/ __| | | | |/\| |/ _ \ '_ \   `--. \ '_ \ / _ \ / _ \| __/ _ \ '__|
+| |\ \ (_| |\ V  V /  | | | \__ \ (__| | | \  /\  /  __/ |_) | /\__/ / | | | (_) | (_) | ||  __/ |   
+\_| \_\__,_| \_/\_/   \_| |_/___/\___|_|_|  \/  \/ \___|_.__/  \____/|_| |_|\___/ \___/ \__\___|_|   </pre>
+		</h1>
+
+		<p class="management">Для перемещения используй <kbd>UP</kbd> / <kbd>DOWN</kbd> / <kbd>LEFT</kbd> / <kbd>RIGHT</kbd></p>
+
+		<p>Использование выстрела <kbd>SPACE</kbd></p>
+
+		<p>Нажмите <kbd>P</kbd>, чтобы приостановить / возобновить игру</p>
+
+		<p>Бонус <code class="bonus">[0]</code>, <code class="bonus">[1]</code>, <code class="bonus">[2]</code> изменяет
+		   тип выстрела</p>
+
+		<p>Бонус <code class="bonus">[x2]</code> увеличивает частоту отрисовки</p>
+
+		<h3>Избегайте столкновений, уничтожь всех врагов и дойди до конца уровня!</h3>
+
+		<div class="flex">
+			<button id="btnBack">Назад</button>
+		</div>
+
+	</aside>
+
+	<main id="game">
+		<div id="score" data-value="0" data-percentage="0"></div>
+		<canvas id="cvs" width="480" height="480"></canvas>
+	</main>
+
+</body>
+
+
